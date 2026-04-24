@@ -1,6 +1,6 @@
 import mo from 'mongoose'
 
-
+console.log("MONGO_URI:", process.env.MONGO_URI);
 mo.connect(process.env.MONGO_URI)
   .then(() => {
     console.log("MongoDB Connected ");
