@@ -1,6 +1,11 @@
 import mo from 'mongoose'
 
-//const url="mongodb://localhost:27017/ecourses"
 
-mo.connect(process.env.MONGO_URI);
-console.log("data connected");
+mo.connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log("MongoDB Connected ");
+  })
+  .catch((err) => {
+    console.log("MongoDB Error ", err);
+    process.exit(1); // IMPORTANT: crash if DB fails
+  });
