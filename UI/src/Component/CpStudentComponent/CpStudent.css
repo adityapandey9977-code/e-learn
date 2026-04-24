@@ -1,0 +1,12 @@
+.register-link {
+  color: #fff;              /* visible on blue background */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link:hover {
+  color: #ffd700;          /* nice hover color */
+}
+.register-t{
+  color:#fff;
+}

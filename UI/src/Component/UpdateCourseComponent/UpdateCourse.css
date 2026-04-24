@@ -1,0 +1,22 @@
+#loginForm{
+    background-color: antiquewhite;
+}
+.label-t{
+  color:#fff;
+}
+.pimg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF6600;
+}
+.bg-fo{
+  background-color: #FF6600 ;
+}
+.imag {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}

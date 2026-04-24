@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: orange;
+  color: white;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.sidebar .logo {
+  font-size: 22px;
+  text-align: center;
+  padding: 20px;
+  background: orange;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar ul li:hover {
+  background: #334155;
+}
+
+.sidebar ul li i {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+/* Collapsed sidebar */
+.sidebar.collapsed {
+  width: 70px;
+}
+
+.sidebar.collapsed ul li span {
+  display: none;
+}
+
+.sidebar.collapsed .logo {
+  font-size: 16px;
+}
+
+/* Toggle button */
+.toggle-btn {
+  position: absolute;
+  top: 15px;
+  left: 260px;
+  font-size: 20px;
+  cursor: pointer;
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.sidebar.collapsed ~ .toggle-btn {
+  left: 80px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    left: -250px;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .toggle-btn {
+    left: 10px;
+  }
+}
