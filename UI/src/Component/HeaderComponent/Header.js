@@ -22,38 +22,38 @@ function Header(){
         {role==='admin'&&(<></>)}
         {role==='instructor'&&(<></>)}
         {role==='student'&&(<></>)}
-        {!role&&( <div class="container-fluid d-none d-lg-block">
-        <div class="row align-items-center py-4 px-xl-5">
-            <div class="col-lg-3">
-                <a href="" class="text-decoration-none">
-                    <h1 class="m-0"><span class="text-primary">E</span>-Learning</h1>
+        {!role&&( <div className="container-fluid d-none d-lg-block">
+        <div className="row align-items-center py-4 px-xl-5">
+            <div className="col-lg-3">
+                <a href="" className="text-decoration-none">
+                    <h1 className="m-0"><span className="text-primary">E</span>-Learning</h1>
                 </a>
             </div>
-            <div class="col-lg-3 text-right">
-                <div class="d-inline-flex align-items-center">
+            <div className="col-lg-3 text-right">
+                <div className="d-inline-flex align-items-center">
                     
-                    <i style={{fontSize:"2em"}} class="text-primary fas fa-map-marker-alt mr-3"></i>
+                    <i style={{fontSize:"2em"}} className="text-primary fas fa-map-marker-alt mr-3"></i>
                     
-                    <div class="text-left">
-                        <h6 class="font-weight-semi-bold mb-1">Our Office</h6>
+                    <div className="text-left">
+                        <h6 className="font-weight-semi-bold mb-1">Our Office</h6>
                         <small>IT Park, Inodre, Madhya Pradesh, India</small>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 text-right">
-                <div class="d-inline-flex align-items-center">
-                    <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
-                    <div class="text-left">
-                        <h6 class="font-weight-semi-bold mb-1">Email Us</h6>
+            <div className="col-lg-3 text-right">
+                <div className="d-inline-flex align-items-center">
+                    <i className="fa fa-2x fa-envelope text-primary mr-3"></i>
+                    <div className="text-left">
+                        <h6 className="font-weight-semi-bold mb-1">Email Us</h6>
                         <small>addevelpoers@gmail.com</small>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 text-right">
-                <div class="d-inline-flex align-items-center">
-                    <i class="fa fa-2x fa-phone text-primary mr-3"></i>
-                    <div class="text-left">
-                        <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
+            <div className="col-lg-3 text-right">
+                <div className="d-inline-flex align-items-center">
+                    <i className="fa fa-2x fa-phone text-primary mr-3"></i>
+                    <div className="text-left">
+                        <h6 className="font-weight-semi-bold mb-1">Call Us</h6>
                         <small>+91 345 6789</small>
                     </div>
                 </div>

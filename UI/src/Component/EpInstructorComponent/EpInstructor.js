@@ -74,34 +74,34 @@ function EpInstructor(){
     return (
         <>
     
-        <div class="" style={{margin: "20px 0"}}>
-        <div class="">
-            <div class="row align-items-center">
-                {/* <div class="col-lg-7 mb-5 mb-lg-0">
-                    <div class="mb-4">
-                        <h5 class="text-primary text-uppercase mb-3" style={{letterSpacing: "5px"}}></h5>
-                        <h1 class="text-white"></h1>
+        <div className="" style={{margin: "20px 0"}}>
+        <div className="">
+            <div className="row align-items-center">
+                {/* <div className="col-lg-7 mb-5 mb-lg-0">
+                    <div className="mb-4">
+                        <h5 className="text-primary text-uppercase mb-3" style={{letterSpacing: "5px"}}></h5>
+                        <h1 className="text-white"></h1>
                     </div>
-                    <p class="text-white"></p>
-                    {/* <ul class="list-inline text-white m-0">
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Labore eos amet dolor amet diam</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Etsea et sit dolor amet ipsum</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Diam dolor diam elitripsum vero.</li>
+                    <p className="text-white"></p>
+                    {/* <ul className="list-inline text-white m-0">
+                        <li className="py-2"><i className="fa fa-check text-primary mr-3"></i>Labore eos amet dolor amet diam</li>
+                        <li className="py-2"><i className="fa fa-check text-primary mr-3"></i>Etsea et sit dolor amet ipsum</li>
+                        <li className="py-2"><i className="fa fa-check text-primary mr-3"></i>Diam dolor diam elitripsum vero.</li>
                     </ul> 
                 </div>*/}
-                <div class="col-lg-12">
-                    <div class="card border-2">
-                        <div class="text-center">
-                            <h1 class="m-0">Edit Profile</h1>
+                <div className="col-lg-12">
+                    <div className="card border-2">
+                        <div className="text-center">
+                            <h1 className="m-0">Edit Profile</h1>
                         </div>
-                        <div class="card-body rounded-bottom bg-fo p-5">
+                        <div className="card-body rounded-bottom bg-fo p-5">
                             <form onSubmit={dataSave}>
                                         <div className="profile-image-box text-center">
                                             <div ><img src={preview} className="profile-img imag" alt="profile" />
  </div>
                                             <label htmlFor="fileInput" className="edit-img-icon" title="Edit profile picture">
                                                 
-                                                <i class="fas fa-pencil-alt fa-1x mr-1 text-white"></i>
+                                                <i className="fas fa-pencil-alt fa-1x mr-1 text-white"></i>
                                             </label>
                                            
 
@@ -118,56 +118,56 @@ function EpInstructor(){
 
                                 <fieldset disabled={val}>
                                     
-                                <div class="form-group">
-                                    <input required name='name' value={name} onChange={(e)=>setName(e.target.value)} type="text" class="form-control border-0 p-4" placeholder="Name"  />
+                                <div className="form-group">
+                                    <input required name='name' value={name} onChange={(e)=>setName(e.target.value)} type="text" className="form-control border-0 p-4" placeholder="Name"  />
                                 </div>
-                                 <div class="form-group">
-                                    <input type="text" value={mobile} onChange={(e)=>SetMobile(e.target.value)}  class="form-control border-0 p-4" placeholder="Mobile number" required="required" />
+                                 <div className="form-group">
+                                    <input type="text" value={mobile} onChange={(e)=>SetMobile(e.target.value)}  className="form-control border-0 p-4" placeholder="Mobile number" required="required" />
                                 </div>
-                                <div class="form-group">
-                                    <input disabled type="email" value={email} onChange={(e)=>setEmail(e.target.value)}  class="form-control border-0 p-4" placeholder="Email"  />
+                                <div className="form-group">
+                                    <input disabled type="email" value={email} onChange={(e)=>setEmail(e.target.value)}  className="form-control border-0 p-4" placeholder="Email"  />
                                 </div>
-                                {/*<div class="form-group">
-                                    <input required type="password" value={pass} onChange={(e)=>setPassword(e.target.value)} class="form-control border-0 p-4" placeholder="Password"  />
+                                {/*<div className="form-group">
+                                    <input required type="password" value={pass} onChange={(e)=>setPassword(e.target.value)} className="form-control border-0 p-4" placeholder="Password"  />
                                 </div>
-                                         <div class="col-md-3">
-                                            <label for="validationServer04" class="form-label">Role</label>
-                                            <select value={role} onChange={(e)=>setRole(e.target.value)}  class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                                         <div className="col-md-3">
+                                            <label for="validationServer04" className="form-label">Role</label>
+                                            <select value={role} onChange={(e)=>setRole(e.target.value)}  className="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
                                                 <option selected disabled value="">Choose...</option>
                                                 <option>Student</option>
                                                 <option>Instructor</option>
                                             </select>
-                                            <div id="validationServer04Feedback" class="invalid-feedback">
+                                            <div id="validationServer04Feedback" className="invalid-feedback">
                                                 
                                             </div>
                                         </div> */}
-                                 <div class="form-group">
-                                    <textarea required type="text" value={address} onChange={(e)=>setAdress(e.target.value)} class="form-control border-0 p-4" placeholder="Address" />
+                                 <div className="form-group">
+                                    <textarea required type="text" value={address} onChange={(e)=>setAdress(e.target.value)} className="form-control border-0 p-4" placeholder="Address" />
                                 </div>
-                                {/* <div class="form-group">
-                                    <input required type="text" value={city} onChange={(e)=>setCity(e.target.value)} class="form-control border-0 p-4" placeholder="City" />
+                                {/* <div className="form-group">
+                                    <input required type="text" value={city} onChange={(e)=>setCity(e.target.value)} className="form-control border-0 p-4" placeholder="City" />
                                 </div> */}
-                                  <label class="" for="" style={{color:"white"}} >
+                                  <label className="" for="" style={{color:"white"}} >
                                                    Gender
                                 </label>
                                 <div style={{display:"flex"}}>
-                                        <div class="form-check">
-                                            <input  class="form-check-input" value="male" checked={gender==='male'} onChange={(e)=>setGender(e.target.value)}  type="radio" name="radioDefault" id="radioDefault1"/>
-                                                <label style={{color:"white"}} class="form-check-label " for="radioDefault1">
+                                        <div className="form-check">
+                                            <input  className="form-check-input" value="male" checked={gender==='male'} onChange={(e)=>setGender(e.target.value)}  type="radio" name="radioDefault" id="radioDefault1"/>
+                                                <label style={{color:"white"}} className="form-check-label " for="radioDefault1">
                                                    Male
                                                 </label>
                                         </div>&nbsp;&nbsp;
-                                        <div class="form-check">
-                                            <input class="form-check-input" value="female" checked={gender==='female'} onChange={(e)=>setGender(e.target.value)}  type="radio" name="radioDefault" id="radioDefault1"/>
-                                                <label style={{color:"white"}} class="form-check-label label-t" for="radioDefault2">
+                                        <div className="form-check">
+                                            <input className="form-check-input" value="female" checked={gender==='female'} onChange={(e)=>setGender(e.target.value)}  type="radio" name="radioDefault" id="radioDefault1"/>
+                                                <label style={{color:"white"}} className="form-check-label label-t" for="radioDefault2">
                                                 Female
                                                 </label>
                                         </div>
                                 </div> 
                                 <br/>
-                                 <div class="form-group">
-                                    <label for="validationServer04" style={{color:"white"}} class="form-label">City</label>
-                                    <select value={city} onChange={(e)=>setCity(e.target.value)} class="custom-select border-0 px-4" style={{height: "47px"}}>
+                                 <div className="form-group">
+                                    <label for="validationServer04" style={{color:"white"}} className="form-label">City</label>
+                                    <select value={city} onChange={(e)=>setCity(e.target.value)} className="custom-select border-0 px-4" style={{height: "47px"}}>
                                         <option  >Select...</option>
                                         <option value="indore">Indore</option>
                                         <option value="bhopal">Bhopal</option>
@@ -175,7 +175,7 @@ function EpInstructor(){
                                     </select>
                                 </div> 
                                 <div>
-                                    <button type="submit" class="btn btn-dark btn-block border-0 py-3" >Update Profile</button>
+                                    <button type="submit" className="btn btn-dark btn-block border-0 py-3" >Update Profile</button>
                                 </div>
                                 </fieldset>
                             </form>

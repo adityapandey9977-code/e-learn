@@ -125,31 +125,31 @@ function CourseDetails(){
     return(
         <>
             
-{/* <section class="hero">
-  <div class="container hero-content">
-    <div class="hero-left">
+{/* <section className="hero">
+  <div className="container hero-content">
+    <div className="hero-left">
       <h1>The Complete Web Development Bootcamp</h1>
       <p>Learn Web Development from scratch and build real-world projects</p>
 
-      <div class="meta">
+      <div className="meta">
         ⭐ 4.7 &nbsp; | &nbsp; 150,000 students &nbsp; | &nbsp; Created by John Doe
       </div>
     </div>
 
-    <div class="hero-right">
+    <div className="hero-right">
       <img src="https://via.placeholder.com/350x200" />
     </div>
   </div>
 </section>
 
-<div class="container main">
+<div className="container main">
 
   
-  <div class="left">
+  <div className="left">
 
-    <div class="card learn">
+    <div className="card learn">
       <h2>What you'll learn</h2>
-      <div class="grid">
+      <div className="grid">
         <p>✔ Build full stack apps</p>
         <p>✔ Master React & Node</p>
         <p>✔ Work with MongoDB</p>
@@ -157,28 +157,28 @@ function CourseDetails(){
       </div>
     </div>
 
-    <div class="card">
+    <div className="card">
       <h2>Course Content</h2>
 
-      <div class="accordion">
-        <div class="item">
-          <div class="title">Introduction</div>
-          <div class="content">Course overview</div>
+      <div className="accordion">
+        <div className="item">
+          <div className="title">Introduction</div>
+          <div className="content">Course overview</div>
         </div>
 
-        <div class="item">
-          <div class="title">HTML & CSS</div>
-          <div class="content">Basics to advanced</div>
+        <div className="item">
+          <div className="title">HTML & CSS</div>
+          <div className="content">Basics to advanced</div>
         </div>
 
-        <div class="item">
-          <div class="title">JavaScript</div>
-          <div class="content">Core concepts</div>
+        <div className="item">
+          <div className="title">JavaScript</div>
+          <div className="content">Core concepts</div>
         </div>
       </div>
     </div>
 
-    <div class="card">
+    <div className="card">
       <h2>Description</h2>
       <p>
         This course will take you from beginner to professional developer.
@@ -188,18 +188,18 @@ function CourseDetails(){
 
   </div>
 
-  <div class="right">
+  <div className="right">
 
-    <div class="course-card">
+    <div className="course-card">
       <img src="https://via.placeholder.com/300x180" />
 
       <h2>₹1999</h2>
 
-      <button class="btn-primary1">Enroll Now</button>
+      <button className="btn-primary1">Enroll Now</button>
 
-      <p class="small">30-Day Money-Back Guarantee</p>
+      <p className="small">30-Day Money-Back Guarantee</p>
 
-      <div class="includes">
+      <div className="includes">
         <p>✔ 60 hours video</p>
         <p>✔ Lifetime access</p>
         <p>✔ Certificate</p>

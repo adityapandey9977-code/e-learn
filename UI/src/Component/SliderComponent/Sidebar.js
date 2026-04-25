@@ -5,26 +5,26 @@ function Sidebar() {
 
 
   const toggleSidebar=()=> {
-  document.getElementById("sidebar").classList.toggle("collapsed");
-  document.getElementById("sidebar").classList.toggle("active");
+  document.getElementById("sidebar").classNameList.toggle("collapsed");
+  document.getElementById("sidebar").classNameList.toggle("active");
 }
 
   return (
     <>
-    <div class="sidebar" id="sidebar">
-  <div class="logo">E-Learn</div>
+    <div className="sidebar" id="sidebar">
+  <div className="logo">E-Learn</div>
 
   <ul>
-    <li><i class="fa fa-home"></i><span>Dashboard</span></li>
-    <li><i class="fa fa-book"></i><span>Courses</span></li>
-    <li><i class="fa fa-plus"></i><span>Create Course</span></li>
-    <li><i class="fa fa-video-camera"></i><span>Lectures</span></li>
-    <li><i class="fa fa-user"></i><span>Profile</span></li>
-    <li><i class="fa fa-sign-out"></i><span>Logout</span></li>
+    <li><i className="fa fa-home"></i><span>Dashboard</span></li>
+    <li><i className="fa fa-book"></i><span>Courses</span></li>
+    <li><i className="fa fa-plus"></i><span>Create Course</span></li>
+    <li><i className="fa fa-video-camera"></i><span>Lectures</span></li>
+    <li><i className="fa fa-user"></i><span>Profile</span></li>
+    <li><i className="fa fa-sign-out"></i><span>Logout</span></li>
   </ul>
 </div>
 
-<button class="toggle-btn" onClick={toggleSidebar}>☰</button>
+<button className="toggle-btn" onClick={toggleSidebar}>☰</button>
     </>
   );
 }

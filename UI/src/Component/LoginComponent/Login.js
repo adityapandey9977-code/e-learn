@@ -40,26 +40,26 @@ function Login(){
     return (
         <>
         {outPut}
-        <div class="container-fluid bg-registration py-5" style={{margin: "90px 0"}}>
-        <div class="container py-5" >
-            <div class="row align-items-center" style={{justifyContent:"end",display:"flex"}} >
+        <div className="container-fluid bg-registration py-5" style={{margin: "90px 0"}}>
+        <div className="container py-5" >
+            <div className="row align-items-center" style={{justifyContent:"end",display:"flex"}} >
                 
-                <div class="col-lg-5 " >
-                    <div class="card border-0">
-                        <div class="card-header bg-light text-center p-4">
-                            <h1 class="m-0">Login to your Account</h1>
+                <div className="col-lg-5 " >
+                    <div className="card border-0">
+                        <div className="card-header bg-light text-center p-4">
+                            <h1 className="m-0">Login to your Account</h1>
                         </div>
-                        <div class="card-body rounded-bottom bg-primary p-5">
-                            <form class="col"  onSubmit={loginHandle}>
-                                <div class="form-group">
-                                    <input value={email} type="email" onChange={(e)=>setEmail(e.target.value)} class="form-control border-0 p-4" placeholder="Your email" required/>
+                        <div className="card-body rounded-bottom bg-primary p-5">
+                            <form className="col"  onSubmit={loginHandle}>
+                                <div className="form-group">
+                                    <input value={email} type="email" onChange={(e)=>setEmail(e.target.value)} className="form-control border-0 p-4" placeholder="Your email" required/>
                                 </div>
-                                <div class="form-group">
-                                    <input value={password} type="password" onChange={(e)=>setPassword(e.target.value)} class="form-control border-0 p-4" placeholder="Your password" required/>
+                                <div className="form-group">
+                                    <input value={password} type="password" onChange={(e)=>setPassword(e.target.value)} className="form-control border-0 p-4" placeholder="Your password" required/>
                                 </div>
                                 
                                 <div>
-                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit">Login</button>
+                                    <button className="btn btn-dark btn-block border-0 py-3" type="submit">Login</button>
                                 <Link style={{justifyContent:"end", display:"flex"}} className='register-t register-link' to="/forgotPassword">Forgot password</Link><br/>
                                 </div>
                 <div className="register-t display-flex">

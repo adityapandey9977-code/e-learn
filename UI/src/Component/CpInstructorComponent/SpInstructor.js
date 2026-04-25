@@ -36,26 +36,26 @@ function SpInstructor(){
     return (
         <>
         {outPut}
-        <div class="" style={{margin: "50px 0"}}>
-        <div class="" >
-            <div class="row align-items-center" >
+        <div className="" style={{margin: "50px 0"}}>
+        <div className="" >
+            <div className="row align-items-center" >
                 
-                <div class="col-lg-5 " >
-                    <div class="card border-2">
-                        <div class="card-header bg-light text-center p-4">
-                            <h1 class="m-0">Please insert new password</h1>
+                <div className="col-lg-5 " >
+                    <div className="card border-2">
+                        <div className="card-header bg-light text-center p-4">
+                            <h1 className="m-0">Please insert new password</h1>
                         </div>
-                        <div class="card-body rounded-bottom bg-primary p-5">
-                            <form class="col"  onSubmit={passHandle}>
-                                <div class="form-group">
-                                    <input value={newPassword} type="password" onChange={(e)=>setNewPassword(e.target.value)} class="form-control border-0 p-4" placeholder="New password" required/>
+                        <div className="card-body rounded-bottom bg-primary p-5">
+                            <form className="col"  onSubmit={passHandle}>
+                                <div className="form-group">
+                                    <input value={newPassword} type="password" onChange={(e)=>setNewPassword(e.target.value)} className="form-control border-0 p-4" placeholder="New password" required/>
                                 </div>
-                                <div class="form-group">
-                                    <input value={confirmPassword} type="password" onChange={(e)=>setConfirmPassword(e.target.value)} class="form-control border-0 p-4" placeholder="Confirm password" required/>
+                                <div className="form-group">
+                                    <input value={confirmPassword} type="password" onChange={(e)=>setConfirmPassword(e.target.value)} className="form-control border-0 p-4" placeholder="Confirm password" required/>
                                 </div>
                                 
                                 <div>
-                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit">Submit</button>
+                                    <button className="btn btn-dark btn-block border-0 py-3" type="submit">Submit</button>
                                 
                                 </div>
                             </form>

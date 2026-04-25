@@ -38,8 +38,8 @@ function Navbar() {
     },[]);
 
  const toggleSidebar=()=> {
-  document.getElementById("sidebar").classList.toggle("collapsed");
-  document.getElementById("sidebar").classList.toggle("active");
+  document.getElementById("sidebar").classNameList.toggle("collapsed");
+  document.getElementById("sidebar").classNameList.toggle("active");
 }
   
   return (
@@ -48,21 +48,21 @@ function Navbar() {
       <div id="ins" style={{display:"flex"}}>
       <div id="side">
         
-  <div class="sidebar" id="sidebar">
-  <div class="logo">E-Learning</div>
+  <div className="sidebar" id="sidebar">
+  <div className="logo">E-Learning</div>
 
   <ul>
-    <li><Link style={{color:"white"}} to='/admin'><i class="fa fa-home"></i><span>Admin Dashboard</span></Link></li>
-    <li><Link style={{color:"white"}} to='/managecourse'><i class="fa fa-book"></i><span>Manage Courses</span></Link></li>
-    <li><Link style={{color:"white"}} to='/manageuser'><i class="fa fa-plus"></i><span>Manage User</span></Link></li>
-    <li><Link style={{color:"white"}} to='/manageinstructor'><i class="fa fa-plus"></i><span>Manage Instructor</span></Link></li>
-    <li><Link style={{color:"white"}} to='/epadmin'><i class="fa fa-user"></i><span>Edit Profile</span></Link></li>
-    <li><Link style={{color:"white"}} to='/cpadmin'><i class="fa fa-lock"></i><span style={{color:"white"}} >Change Password</span></Link></li>
-    <li><Link style={{color:"white"}}  to='/logout'><i class="fa fa-sign-out-alt"></i><span>Logout</span></Link></li>
+    <li><Link style={{color:"white"}} to='/admin'><i className="fa fa-home"></i><span>Admin Dashboard</span></Link></li>
+    <li><Link style={{color:"white"}} to='/managecourse'><i className="fa fa-book"></i><span>Manage Courses</span></Link></li>
+    <li><Link style={{color:"white"}} to='/manageuser'><i className="fa fa-plus"></i><span>Manage User</span></Link></li>
+    <li><Link style={{color:"white"}} to='/manageinstructor'><i className="fa fa-plus"></i><span>Manage Instructor</span></Link></li>
+    <li><Link style={{color:"white"}} to='/epadmin'><i className="fa fa-user"></i><span>Edit Profile</span></Link></li>
+    <li><Link style={{color:"white"}} to='/cpadmin'><i className="fa fa-lock"></i><span style={{color:"white"}} >Change Password</span></Link></li>
+    <li><Link style={{color:"white"}}  to='/logout'><i className="fa fa-sign-out-alt"></i><span>Logout</span></Link></li>
   </ul>
 </div>
 
-<button class="toggle-btn" onClick={toggleSidebar}>☰</button>
+<button className="toggle-btn" onClick={toggleSidebar}>☰</button>
 </div>
       <div id="inst">
         <Routes>
@@ -82,20 +82,20 @@ function Navbar() {
       <div id="ins" style={{display:"flex"}}>
       <div id="side">
         
-  <div class="sidebar" id="sidebar">
-  <div class="logo">E-Learning</div>
+  <div className="sidebar" id="sidebar">
+  <div className="logo">E-Learning</div>
 
   <ul>
-    <li><Link style={{color:"white"}} to='/student'><i class="fa fa-home"></i><span>Dashboard</span></Link></li>
-    <li><Link style={{color:"white"}} to='/course'><i class="fa fa-book"></i><span>Courses</span></Link></li>
-    <li><Link style={{color:"white"}} to='/studentcourse'><i class="fa fa-plus"></i><span>My Course</span></Link></li>
-    <li><Link style={{color:"white"}} to='/epstudent'><i class="fa fa-user"></i><span>Edit Profile</span></Link></li>
-    <li><Link style={{color:"white"}} to='/cpstudent'><i class="fa fa-lock"></i><span style={{color:"white"}} >Change Password</span></Link></li>
-    <li><Link style={{color:"white"}}  to='/logout'><i class="fa fa-sign-out-alt"></i><span>Logout</span></Link></li>
+    <li><Link style={{color:"white"}} to='/student'><i className="fa fa-home"></i><span>Dashboard</span></Link></li>
+    <li><Link style={{color:"white"}} to='/course'><i className="fa fa-book"></i><span>Courses</span></Link></li>
+    <li><Link style={{color:"white"}} to='/studentcourse'><i className="fa fa-plus"></i><span>My Course</span></Link></li>
+    <li><Link style={{color:"white"}} to='/epstudent'><i className="fa fa-user"></i><span>Edit Profile</span></Link></li>
+    <li><Link style={{color:"white"}} to='/cpstudent'><i className="fa fa-lock"></i><span style={{color:"white"}} >Change Password</span></Link></li>
+    <li><Link style={{color:"white"}}  to='/logout'><i className="fa fa-sign-out-alt"></i><span>Logout</span></Link></li>
   </ul>
 </div>
 
-<button class="toggle-btn" onClick={toggleSidebar}>☰</button>
+<button className="toggle-btn" onClick={toggleSidebar}>☰</button>
 </div>
       <div id="inst">
         <Routes>
@@ -116,20 +116,20 @@ function Navbar() {
       <div id="ins" style={{display:"flex"}}>
       <div id="side">
         
-  <div class="sidebar" id="sidebar">
-  <div class="logo">E-Learning</div>
+  <div className="sidebar" id="sidebar">
+  <div className="logo">E-Learning</div>
 
   <ul>
-    <li><Link style={{color:"white"}} to='/instructor'><i class="fa fa-home"></i><span>Dashboard</span></Link></li>
-    <li><Link style={{color:"white"}} to='/instructorcourse'><i class="fa fa-book"></i><span>Courses</span></Link></li>
-    <li><Link style={{color:"white"}} to='/addcourse'><i class="fa fa-plus"></i><span>Create Course</span></Link></li>
-    <li><Link style={{color:"white"}} to='/epinstructor'><i class="fa fa-user"></i><span>Edit Profile</span></Link></li>
-    <li><Link style={{color:"white"}} to='/cpinstructor'><i class="fa fa-lock"></i><span style={{color:"white"}} >Change Password</span></Link></li>
-    <li><Link style={{color:"white"}}  to='/logout'><i class="fa fa-sign-out-alt"></i><span>Logout</span></Link></li>
+    <li><Link style={{color:"white"}} to='/instructor'><i className="fa fa-home"></i><span>Dashboard</span></Link></li>
+    <li><Link style={{color:"white"}} to='/instructorcourse'><i className="fa fa-book"></i><span>Courses</span></Link></li>
+    <li><Link style={{color:"white"}} to='/addcourse'><i className="fa fa-plus"></i><span>Create Course</span></Link></li>
+    <li><Link style={{color:"white"}} to='/epinstructor'><i className="fa fa-user"></i><span>Edit Profile</span></Link></li>
+    <li><Link style={{color:"white"}} to='/cpinstructor'><i className="fa fa-lock"></i><span style={{color:"white"}} >Change Password</span></Link></li>
+    <li><Link style={{color:"white"}}  to='/logout'><i className="fa fa-sign-out-alt"></i><span>Logout</span></Link></li>
   </ul>
 </div>
 
-<button class="toggle-btn" onClick={toggleSidebar}>☰</button>
+<button className="toggle-btn" onClick={toggleSidebar}>☰</button>
 </div>
       <div id="inst">
         <Routes>
