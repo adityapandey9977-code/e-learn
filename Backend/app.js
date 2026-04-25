@@ -22,9 +22,30 @@ import courseRoute from './router/courseRoute.js'
 import enrollmentRoutes from './router/enrollmentRoute.js'
 const app=express();
 
+
+const allowedOrigins = [
+  "https://e-learn-one-ivory.vercel.app"
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
+
+// VERY IMPORTANT
 app.use(cors());
+
+
 app.use(express.json());
-app.use(express.urlencoded({extends:true}));
+app.use(express.urlencoded({extend:true}));
 app.use("/uploads",express.static("uploads"));
 
 app.use("/user",userRo);

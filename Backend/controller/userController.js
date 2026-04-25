@@ -33,8 +33,8 @@ export const save=async (req,res)=>{
     //console.log(_id);
     let savedData=await userCollection.create(userDetail);
     
-    const verifyLink = `http://localhost:5000/user/verify/${token}`;
-
+    
+    const verifyLink = `${process.env.REACT_APP_API_URL}/user/verify/${token}`;
     sendMail(savedData.email,verifyLink);
     
     res.status(200).json({"msg":"data saved"});
@@ -54,11 +54,12 @@ export const verifyEmail = async(req,res)=>{
       user.status=1;
       user.verificationToken ="" ;
       await user.save();
-      res.redirect("http://localhost:3000/login");
+      res.redirect(`${process.env.FRONTEND_URL}/login`);
+      
   }
   catch(err)
   {
-    //console.log(err);
+    console.log(err);
      res.status(500).json({msg:"Server Error"});
   }
 }
@@ -184,8 +185,9 @@ export const confirmPass=async(req,res)=>{
   else
   {
     console.log(condata);
-    //const contoken = crypto.randomBytes(32).toString("hex");      
-    const converifyLink = `http://localhost:3000/resetPassword/${condata.email}`;
+    //const contoken = crypto.randomBytes(32).toString("hex");
+    //res.redirect(`${process.env.FRONTEND_URL}/login`);      
+    const converifyLink = `${process.env.FRONTEND_URL}/resetPassword/${condata.email}`;
     //let updatereturn=await userCollection.updateOne({email:condata.email},{$set:{verificationToken:contoken}});
     forgotEmail(condata.email,converifyLink);
     res.status(200).json({"message":"Reset password link has been sent to your email, Please check your email"})
