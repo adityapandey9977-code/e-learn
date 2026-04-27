@@ -17,7 +17,7 @@ function StudentCourse() {
   const fetchCourses = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/enrollment/mycourses?userId=${userId}`
+        `${process.env.REACT_APP_API_URL}/enrollment/mycourses?userId=${userId}`
       );
       setCourses(res.data);
     } catch (err) {
@@ -39,7 +39,7 @@ function StudentCourse() {
 
                 {/* IMAGE */}
                 <img
-                  src={`http://localhost:5000/uploads/${item.courseId?.thumbnail}`}
+                  src={`${process.env.REACT_APP_API_URL}/uploads/${item.courseId?.thumbnail}`}
                   alt="course"
                   className="img-fluid mb-2"
                   style={{ height: "120px", objectFit: "cover" }}

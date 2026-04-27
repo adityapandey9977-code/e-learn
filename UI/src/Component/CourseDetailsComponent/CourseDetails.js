@@ -12,10 +12,10 @@ function CourseDetails(){
   const [course, setCourse] = useState(null);
   const [isProcessing, setIsProcessing] = useState(false); // ADD
 
-  const SERVER_URL = "http://localhost:5000/uploads/";
+  const SERVER_URL = `${process.env.REACT_APP_API_URL}/uploads/`;
 
   useEffect(() => {
-    axios.get("http://localhost:5000/course/fatch")
+    axios.get(`${process.env.REACT_APP_API_URL}/course/fatch`)
       .then((res) => {
         const found = res.data.find(c => c._id == id);
         setCourse(found);
@@ -32,7 +32,7 @@ function CourseDetails(){
     const userId = localStorage.getItem("_id");
 
     const { data: order } = await axios.post(
-      "http://localhost:5000/enrollment/create-order",
+      `${process.env.REACT_APP_API_URL}/create-order`,
       { amount: course.price }
     );
     console.log(order);
@@ -48,7 +48,7 @@ function CourseDetails(){
       handler: async function (response) {
         console.log("success");
         await axios.post(
-          "http://localhost:5000/enrollment/verify-payment",
+          `${process.env.REACT_APP_API_URL}/enrollment/verify-payment`,
           {
             ...response,
             userId,
@@ -67,7 +67,7 @@ function CourseDetails(){
           console.log("on");
           try {
             await axios.post(
-              "http://localhost:5000/enrollment/verify-payment",
+              `${process.env.REACT_APP_API_URL}/enrollment/verify-payment`,
               {
                 razorpay_payment_id: "demo_payment",
                 razorpay_order_id: order.id,
@@ -97,7 +97,7 @@ function CourseDetails(){
 
       try {
         await axios.post(
-          "http://localhost:5000/enrollment/verify-payment",
+          `${process.env.REACT_APP_API_URL}/enrollment/verify-payment`,
           {
             razorpay_payment_id: "demo_payment",
             razorpay_order_id: order.id,

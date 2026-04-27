@@ -46,7 +46,7 @@ function UpdateCourse(){
             setDuration(res.data[0].duration);
             setDescription(res.data[0].description);
                         if(res.data[0].thumbnail)
-            {setPreview("http://localhost:5000/uploads/"+res.data[0].thumbnail)}
+            {setPreview(`${process.env.REACT_APP_API_URL}/uploads/`+res.data[0].thumbnail)}
             //alert();
         }).catch()
 

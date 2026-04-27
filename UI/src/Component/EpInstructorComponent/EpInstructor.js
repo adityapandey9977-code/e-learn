@@ -34,7 +34,7 @@ function EpInstructor(){
             setCity(res.data[0].city);
             setGender(res.data[0].gender);
             if(res.data[0].profilePic)
-            {setPreview("http://localhost:5000/uploads/"+res.data[0].profilePic)}
+            {setPreview(`${process.env.REACT_APP_API_URL}/uploads/`+res.data[0].profilePic)}
         }).catch()
     },[])    
     
