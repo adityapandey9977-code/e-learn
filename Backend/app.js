@@ -24,7 +24,7 @@ const app=express();
 
 
 const allowedOrigins = [
-  "https://e-learn-one-ivory.vercel.app"
+  "https://e-learn-one-ivory.vercel.app","http://localhost:3000"
 ];
 
 app.use(cors({

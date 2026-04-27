@@ -33,7 +33,7 @@ export const save=async (req,res)=>{
     //console.log(_id);
     let savedData=await userCollection.create(userDetail);
     
-    
+    console.log(process.env.REACT_APP_API_URL);
     const verifyLink = `${process.env.REACT_APP_API_URL}/user/verify/${token}`;
     sendMail(savedData.email,verifyLink);
     
