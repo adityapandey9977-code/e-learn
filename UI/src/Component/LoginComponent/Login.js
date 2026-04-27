@@ -26,7 +26,7 @@ function Login(){
           localStorage.setItem("role",user.role);
           localStorage.setItem("status",user.status);
           localStorage.setItem("info",user.info);
-                alert(user.role);
+                //alert(user.role);
           if(user.role=="student")
             navigate('/student');
           else if(user.role=="instructor")

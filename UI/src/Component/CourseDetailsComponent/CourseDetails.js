@@ -32,7 +32,7 @@ function CourseDetails(){
     const userId = localStorage.getItem("_id");
 
     const { data: order } = await axios.post(
-      `${process.env.REACT_APP_API_URL}/create-order`,
+      `${process.env.REACT_APP_API_URL}/enrollment/create-order`,
       { amount: course.price }
     );
     console.log(order);

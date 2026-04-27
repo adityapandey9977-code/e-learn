@@ -38,8 +38,8 @@ function Navbar() {
     },[]);
 
  const toggleSidebar=()=> {
-  document.getElementById("sidebar").classNameList.toggle("collapsed");
-  document.getElementById("sidebar").classNameList.toggle("active");
+  document.getElementById("sidebar").classList.toggle("collapsed");
+  document.getElementById("sidebar").classList.toggle("active");
 }
   
   return (
