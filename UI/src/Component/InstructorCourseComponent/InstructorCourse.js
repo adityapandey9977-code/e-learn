@@ -21,7 +21,7 @@ function InstructorCourse(){
     },[reload])
 
     const updateUser=(s,id)=>{
-        alert(s);
+        //alert(s);
         if(s=='update')
         {
 

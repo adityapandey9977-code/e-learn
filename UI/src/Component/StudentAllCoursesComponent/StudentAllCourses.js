@@ -1,11 +1,11 @@
 import { Link, useNavigate } from 'react-router-dom';
-import './Product.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { apiurlcourse } from '../../ApiUrl';
 
-function Product(){
-    const navigate=useNavigate();
+const StudentAllCourses=()=>
+{
+        const navigate=useNavigate();
     const [courses,setcourses]=useState([]);
     useEffect(()=>{
         axios.get(apiurlcourse+"fatch?status=1").then((res)=>{
@@ -29,10 +29,9 @@ function Product(){
       navigate(`/coursedetails/${courseId}`);
     }
   };
-    return (
+    return(
         <>
-        
-        <div className="container-fluid py-5">
+                <div className="container-fluid py-5">
         <div className="container py-5">
             <div className="text-center mb-5">
                 <h5 className="text-primary text-uppercase mb-3" style={{letterSpacing: "5px"}}>Courses</h5>
@@ -184,5 +183,4 @@ function Product(){
         </>
     );
 }
-
-export default Product;
+export default StudentAllCourses;

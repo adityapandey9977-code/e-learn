@@ -22,6 +22,7 @@ import EpAdmin from "../EpadminComponent/EpAdmin"
 import ManageUser from "../ManageStudentComponent/ManageStudent"
 import CourseDetails from "../CourseDetailsComponent/CourseDetails"
 import StudentCourse from "../StudentCourseComponent/StudentCourse";
+import StudentAllCourses from "../StudentAllCoursesComponent/StudentAllCourses";
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -54,8 +55,8 @@ function Navbar() {
   <ul>
     <li><Link style={{color:"white"}} to='/admin'><i className="fa fa-home"></i><span>Admin Dashboard</span></Link></li>
     <li><Link style={{color:"white"}} to='/managecourse'><i className="fa fa-book"></i><span>Manage Courses</span></Link></li>
-    <li><Link style={{color:"white"}} to='/manageuser'><i className="fa fa-plus"></i><span>Manage User</span></Link></li>
-    <li><Link style={{color:"white"}} to='/manageinstructor'><i className="fa fa-plus"></i><span>Manage Instructor</span></Link></li>
+    <li><Link style={{color:"white"}} to='/manageuser'><i className="fa fa-user"></i><span>Manage User</span></Link></li>
+    <li><Link style={{color:"white"}} to='/manageinstructor'><i className="fa fa-user"></i><span>Manage Instructor</span></Link></li>
     <li><Link style={{color:"white"}} to='/epadmin'><i className="fa fa-user"></i><span>Edit Profile</span></Link></li>
     <li><Link style={{color:"white"}} to='/cpadmin'><i className="fa fa-lock"></i><span style={{color:"white"}} >Change Password</span></Link></li>
     <li><Link style={{color:"white"}}  to='/logout'><i className="fa fa-sign-out-alt"></i><span>Logout</span></Link></li>
@@ -87,8 +88,8 @@ function Navbar() {
 
   <ul>
     <li><Link style={{color:"white"}} to='/student'><i className="fa fa-home"></i><span>Dashboard</span></Link></li>
-    <li><Link style={{color:"white"}} to='/course'><i className="fa fa-book"></i><span>Courses</span></Link></li>
-    <li><Link style={{color:"white"}} to='/studentcourse'><i className="fa fa-plus"></i><span>My Course</span></Link></li>
+    <li><Link style={{color:"white"}} to='/studentallcourses'><i className="fa fa-book"></i><span>All Courses</span></Link></li>
+    <li><Link style={{color:"white"}} to='/studentcourse'><i className="fa fa-book"></i><span>My Course</span></Link></li>
     <li><Link style={{color:"white"}} to='/epstudent'><i className="fa fa-user"></i><span>Edit Profile</span></Link></li>
     <li><Link style={{color:"white"}} to='/cpstudent'><i className="fa fa-lock"></i><span style={{color:"white"}} >Change Password</span></Link></li>
     <li><Link style={{color:"white"}}  to='/logout'><i className="fa fa-sign-out-alt"></i><span>Logout</span></Link></li>
@@ -100,7 +101,7 @@ function Navbar() {
       <div id="inst">
         <Routes>
           <Route path='/student' element={<StudentDashboard/>}></Route>
-          <Route path='/course' element={<Product/>}></Route>
+          <Route path='/studentallcourses' element={<StudentAllCourses/>}></Route>
         <Route path='/epstudent' element={<EpStudent/>}></Route>
       <Route path='/cpstudent' element={<CpStudent/>}></Route>
       <Route path='/spstudent' element={<SpStudent/>}></Route>
@@ -121,7 +122,7 @@ function Navbar() {
 
   <ul>
     <li><Link style={{color:"white"}} to='/instructor'><i className="fa fa-home"></i><span>Dashboard</span></Link></li>
-    <li><Link style={{color:"white"}} to='/instructorcourse'><i className="fa fa-book"></i><span>Courses</span></Link></li>
+    <li><Link style={{color:"white"}} to='/instructorcourse'><i className="fa fa-book"></i><span>My Courses</span></Link></li>
     <li><Link style={{color:"white"}} to='/addcourse'><i className="fa fa-plus"></i><span>Create Course</span></Link></li>
     <li><Link style={{color:"white"}} to='/epinstructor'><i className="fa fa-user"></i><span>Edit Profile</span></Link></li>
     <li><Link style={{color:"white"}} to='/cpinstructor'><i className="fa fa-lock"></i><span style={{color:"white"}} >Change Password</span></Link></li>

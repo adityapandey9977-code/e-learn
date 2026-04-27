@@ -49,11 +49,11 @@ function StudentCourse() {
                 <h5>{item.courseId?.title}</h5>
 
                 {/* STATUS */}
-                <span className="badge bg-success mb-2">Enrolled</span>
+                <span className="badge bg-success text-white mb-2">Enrolled</span>
 
                 {/* DESCRIPTION (SCROLLABLE) */}
                 <div className="desc-box">
-                  <p>{item.courseId?.description}</p>
+                  {/* <p>{item.courseId?.description}</p> */}
                 </div>
 
                 {/* PRICE & DURATION */}
