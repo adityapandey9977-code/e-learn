@@ -134,7 +134,7 @@ export const update=async (req,res)=>{
       //newdata.profilePic=req.file.filename;
       newdata.profilePic=req.file.path;
     }
-    console.log(req.file.path);
+    //console.log(req.file.path);
     console.log(newdata);
    // let updatereturn=await userCollection.updateOne({email:em},{$set:newdata});
     let updatereturn=await userCollection.updateMany(condition,{$set:newdata});
