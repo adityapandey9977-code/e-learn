@@ -15,7 +15,7 @@ export const save= async(req,res)=>{
             
             if(req.file)
         {
-            courseDetail.thumbnail=req.file.filename;
+            courseDetail.thumbnail=req.file.path;
         }  
             console.log(courseDetail);
                 //let userid=if()userdata[userdata.length-1]._id+1;
@@ -51,7 +51,7 @@ export const update=async(req,res)=>{
     let newdata=req.body;
     if(req.file)
     {
-      newdata.thumbnail=req.file.filename;
+      newdata.thumbnail=req.file.path;
     }
     console.log(condition);
     console.log(newdata);

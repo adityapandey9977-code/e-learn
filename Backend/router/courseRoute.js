@@ -1,6 +1,6 @@
 import express from 'express';
 import * as coursecont from '../controller/courseController.js';
-import upload from '../config/mutler.config.js';
+import upload from '../middleware/upload.js';
 const router=express.Router();
 
 router.post("/save",upload.single('thumbnail'),coursecont.save);

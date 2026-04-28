@@ -105,7 +105,8 @@ export const login=async(req,res)=>{
       role: user.role
     };
 
-    const key = rs.generate();
+    //const key = rs.generate();
+    const key = "secretkey";
     const token = jwt.sign(payload, key);
 
     // 5. success response
@@ -130,9 +131,10 @@ export const update=async (req,res)=>{
     let newdata=req.body;
     if(req.file)
     {
-      newdata.profilePic=req.file.filename;
+      //newdata.profilePic=req.file.filename;
+      newdata.profilePic=req.file.path;
     }
-    console.log(condition);
+    console.log(req.file.path);
     console.log(newdata);
    // let updatereturn=await userCollection.updateOne({email:em},{$set:newdata});
     let updatereturn=await userCollection.updateMany(condition,{$set:newdata});
