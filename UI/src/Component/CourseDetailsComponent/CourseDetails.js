@@ -217,7 +217,7 @@ function CourseDetails(){
         {/* LEFT SIDE IMAGE */}
         <div className="col-md-6">
           <img
-            src={`${SERVER_URL}${course.thumbnail}`}
+            src={`${course.thumbnail}`}
             alt="course"
             className="img-fluid rounded shadow"
           />

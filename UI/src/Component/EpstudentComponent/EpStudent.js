@@ -34,7 +34,7 @@ function EpStudent() {
             setCity(res.data[0].city);
             setGender(res.data[0].gender);
             if (res.data[0].profilePic)
-            { setPreview(`${process.env.REACT_APP_API_URL}/uploads/` + res.data[0].profilePic) }
+            { setPreview(res.data[0].profilePic) }
         }).catch()
     }, [])
 

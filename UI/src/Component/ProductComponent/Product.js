@@ -151,7 +151,7 @@ function Product(){
 
                   <div className="col-lg-4 col-md-6 mb-4">
                     <div className="rounded overflow-hidden mb-2">
-                        <img className="img-fluid" style={{width:"100%", height:"200px", objectFit:"cover"}} src={`${process.env.REACT_APP_API_URL}/uploads/${row.thumbnail}`}  alt=""/>
+                        <img className="img-fluid" style={{width:"100%", height:"200px", objectFit:"cover"}} src={`${row.thumbnail}`}  alt=""/>
                         <div className="bg-secondary p-4">
                             <div className="d-flex justify-content-between mb-3">
                                 <small className="m-0"><i className="fa fa-users text-primary mr-2"></i>25 Students</small>

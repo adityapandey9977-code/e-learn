@@ -39,7 +39,7 @@ function StudentCourse() {
 
                 {/* IMAGE */}
                 <img
-                  src={`${process.env.REACT_APP_API_URL}/uploads/${item.courseId?.thumbnail}`}
+                  src={`${item.courseId?.thumbnail}`}
                   alt="course"
                   className="img-fluid mb-2"
                   style={{ height: "120px", objectFit: "cover" }}
